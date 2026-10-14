@@ -1,0 +1,16 @@
+[
+  {
+    "modid": "minecraftexe",
+    "name": "Minecraft.exe",
+    "description": "Forge mod template for Minecraft 1.12.2.",
+    "version": "${version}",
+    "mcversion": "${mcversion}",
+    "url": "https://github.com/szalainevarganora-crypto/Minecraft.exe",
+    "updateUrl": "",
+    "authorList": ["szalainevarganora-crypto"],
+    "credits": "Created with ForgeGradle for Minecraft 1.12.2",
+    "logoFile": "",
+    "screenshots": [],
+    "dependencies": []
+  }
+]
