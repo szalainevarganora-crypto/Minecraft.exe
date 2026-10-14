@@ -1,7 +1,6 @@
 buildscript {
     repositories {
-        jcenter()
-        maven { url = "https://files.minecraftforge.net/maven" }
+        maven { url 'https://files.minecraftforge.net/maven' }
         mavenCentral()
     }
     dependencies {
@@ -11,39 +10,26 @@ buildscript {
 
 apply plugin: 'net.minecraftforge.gradle.forge'
 
-version = '1.0.0'
-group = 'com.szalainevarganora.minecraftexe'
-archivesBaseName = 'minecraftexe'
+version = "1.0"
+group = "hu.szalainevarganora"
+archivesBaseName = "minecraftexe"
 
-sourceCompatibility = targetCompatibility = 1.8
-
-minecraft {
-    version = "1.12.2-14.23.5.2855"
-    runDir = "run"
-    mappings = "snapshot_20171003"
+repositories {
+    maven { url 'https://files.minecraftforge.net/maven' }
 }
 
-dependencies {
-    // Add your dependencies here if needed.
+minecraft {
+    // Recommended Forge for 1.12.2
+    version = "1.12.2-14.23.5.2854"
+    runDir = "run"
 }
 
 processResources {
-    inputs.property "version", project.version
-    inputs.property "mcversion", project.minecraft.version
-
+    inputs.property "version", version
     from(sourceSets.main.resources.srcDirs) {
-        include 'mcmod.info'
-        expand 'version': project.version, 'mcversion': project.minecraft.version
-    }
-
-    from(sourceSets.main.resources.srcDirs) {
-        exclude 'mcmod.info'
+        include '**/*.mcmeta'
+        expand 'version': version
     }
 }
 
-jar {
-    manifest {
-        attributes 'Implementation-Title': project.name,
-                   'Implementation-Version': project.version
-    }
-}
+// No additional dependencies for this starter
