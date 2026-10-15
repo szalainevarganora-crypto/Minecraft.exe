@@ -1,18 +1,5 @@
-# Reverse Will
+# Removed
 
-A zeneszám a Silent Hell 2-ben hangzott el.  
-A megjegyzés alapján ez a cím: `Reverse Will`.
+This file was removed from the repository on 2026-10-15 by request of the repository owner due to copyright concerns regarding the track "Reverse Will".
 
-## Információ
-- Cím: Reverse Will
-- Megjelenés: Silent Hell 2
-- Kategória: zene / hanganyag
-- Hely: `assets/music/`
-
-## Megjegyzés
-Ez a könyvtár a jövőbeli zenei fájlok és a kapcsolódó információk számára készült.
-Ha a szám tényleges audiófájlját is hozzá szeretnéd adni, itt lehet feltenni a megfelelő formátumban (például `.mp3`, `.ogg`, vagy `.wav`).
-
-## Jogi és forrás megjegyzés
-A felvétel fizikai vagy digitális forrását és felhasználási jogait a projektben érintett szerző/forrás határozza meg.
-Ha a zene tulajdonosa vagy a forrás URL-je ismert, ezt itt lehet rögzíteni.
+If you believe this is an error or need further action (e.g., complete deletion from history or removal of the audio file if it exists), please let me know and I will provide next steps or assist further.
