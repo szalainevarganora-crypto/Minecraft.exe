@@ -127,7 +127,13 @@ public class ChallengeHandler {
             }
 
             // Inform the player about the accompaniment
-            player.sendMessage(new TextComponentString(TextFormatting.GRAY + "Te " + ("evil".equals(alignment) ? "gonoszként" : ("good".equals(alignment) ? "jóként" : "semlegesként")) + " énekelsz: " + TextFormatting.DARK_AQUA + accompanimentDesc));
+            String playerRole = "semlegesként";
+            if ("evil".equals(alignment)) playerRole = "gonoszként";
+            else if ("good".equals(alignment)) playerRole = "jóként";
+
+            player.sendMessage(new TextComponentString(
+                TextFormatting.GRAY + "Te " + playerRole + " énekeltél; kíséret: " + TextFormatting.DARK_AQUA + accompanimentDesc
+            ));
 
         } catch (Exception e) {
             // fail silently if sound can't be played
