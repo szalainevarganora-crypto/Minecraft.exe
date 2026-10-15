@@ -7,6 +7,7 @@ import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import net.minecraftforge.common.MinecraftForge;
 
 @Mod(
     modid = Reference.MOD_ID,
@@ -25,6 +26,8 @@ public class ExampleMod {
     @EventHandler
     public void init(FMLInitializationEvent event) {
         LOGGER.info("{} init started", Reference.NAME);
+        // Register the ChallengeHandler so it receives events
+        MinecraftForge.EVENT_BUS.register(new ChallengeHandler());
     }
 
     @EventHandler
