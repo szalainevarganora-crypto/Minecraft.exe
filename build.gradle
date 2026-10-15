@@ -1,7 +1,7 @@
 buildscript {
     repositories {
-        jcenter()
-        maven { url = "https://files.minecraftforge.net/maven" }
+        maven { url = "https://maven.minecraftforge.net" }
+        maven { url = "https://oss.sonatype.org/content/repositories/snapshots" }
         mavenCentral()
     }
     dependencies {
@@ -16,6 +16,12 @@ group = 'com.szalainevarganora.minecraftexe'
 archivesBaseName = 'minecraftexe'
 
 sourceCompatibility = targetCompatibility = 1.8
+
+repositories {
+    maven { url = "https://maven.minecraftforge.net" }
+    maven { url = "https://oss.sonatype.org/content/repositories/snapshots" }
+    mavenCentral()
+}
 
 minecraft {
     version = "1.12.2-14.23.5.2855"
